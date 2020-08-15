@@ -22,7 +22,7 @@ class QuotesSpider(scrapy.Spider):
     start_urls = []
 
 
-    def __init__(self, category='',pages=3 ,**kwargs):  # The category variable will have the input URL.
+    def __init__(self, category='',pages=1 ,**kwargs):  # The category variable will have the input URL.
         self.myBaseUrl = category
         self.start_urls.append(self.myBaseUrl)
         self.pages = pages
